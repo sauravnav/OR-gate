@@ -22,3 +22,19 @@ def input( ):                            #selecting 2 inputs for or gate
       in2 = matrix(r,2)
       z = (in1*weight(1))+(in2*weight(2))   #only considered 2 inputs ,no bias
       mat.append(z)                        #not neccessary , just for storing
+      
+      
+      #element acccess in p
+      # print(p)
+  for i in range(0,row1): # 0 4
+     for j in range(0,col2): #2
+          for k in range(0,row2):
+               p[i][j] += a[i][k] * w[k][j]
+print(p)
+for i in range(len(p)):
+    for j in range(len(p[0])):
+        print(p[i][j], end = " ")
+# a = [1,2]
+# print(len(a))
+# b = [[1],[2]]
+# print(len(b[0]))
